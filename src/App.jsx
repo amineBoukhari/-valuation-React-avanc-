@@ -17,14 +17,14 @@ function App() {
           <Route path="/" element={<Layout />}>
             <Route path="recipes" element={<Recipes />} />
             <Route path="detail/:type/:id" element={<Detail />} />
-           
+            <Route path="recipes/:id" element={<RecipeDetail />} />
             <Route path="Error/Error404" element={<Error404 />} />
           </Route>
         </Routes>
       </BrowserRouter>
     </div>
   )
-  //<Route path="recipes/:id" element={<RecipeDetail />} />
+ 
 }
 
 export default App
